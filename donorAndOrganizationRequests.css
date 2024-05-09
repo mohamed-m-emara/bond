@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Additional CSS for Navbar Interactivity and Styling */
+
+.main-content {
+  min-height: calc(100vh - (height of navbar + height of footer));
+  /* Other styles */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: #86b77f;
+  align-items: center;
+  background-color: #474B47;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+#notification-dropdown {
+  display: none;
+}
+
+/* Class to show the dropdown */
+.show {
+  display: block !important;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#profile-icon {
+  margin-left: 20px;
+  /* Adjust as needed */
+}
+
+
+
+.current {
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #5fa865;
+}
+
+.container {
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.profile-card {
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  justify-content: space-between;
+  /* Add this line */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 45%;
+  /* Adjust as needed */
+}
+
+.profile-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-card a {
+  text-decoration: none;
+  color: #474B47;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  flex-grow: 1;
+  /* Add this line */
+}
+
+.reject-button {
+  margin-left: 10px;
+  background-color: #f44336;
+  /* Red */
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.reject-button:hover {
+  background-color: #da190b;
+  /* Darker red */
+}
+
+.certificate-button {
+  margin-left: 10px;
+  margin-right: 20px;
+  background-color: #3F7A7F;
+  /* Red */
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 10px;
+
+  border-radius: 4px;
+  width: 150px;
+  /* Add this line */
+  text-align: center;
+  font-size: 16px;
+}
+
+
+.certificate-button:hover {
+  background-color: #4f8a8f;
+  /* Darker red */
+}
+
+.accept-button {
+  margin-left: 10px;
+  background-color: #4F8A5E;
+  /* Red */
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.accept-button:hover {
+  background-color: #5fa865;
+  /* Darker red */
+}
+
+a {
+  display: inline-block;
+
+}
+
+
+
+.delete-link {
+  display: inline-block;
+  margin-left: 370px;
+}
+
+.delete-link1 {
+  display: inline-block;
+  margin-left: 469px;
+}
+
+.filter-container {
+  position: absolute;
+  top: 80px;
+  right: 90px;
+}
+
+.filter-button {
+  background-color: transparent;
+
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.filter-dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.filter-container:hover .filter-dropdown {
+  display: block;
+}
+
+.filter-dropdown a:hover {
+  background-color: #5fa865;
+  /* Change this to the color you want */
+}
+
+.sort-text {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  font-family: Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.search-form input {
+  width: 200px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search-form button {
+  padding: 5px;
+}

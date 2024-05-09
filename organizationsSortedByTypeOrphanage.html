@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="organizationList.css">
+
+
+<title>Admin Dashboard Navbar</title>
+
+</head>
+<body>
+
+<div class="navbar">
+
+    
+    <a href="index.html">
+        <img src="logo.png" class="logo" style="max-width: 70px; max-height: 70px;">
+    </a>
+
+    <a href="adminDashboard.html">Main</a>
+    <a href="donorsList.html" >Donors</a>
+    <a href="organizationList.html" class="current">Organizations</a>
+    <a href="donorAndOrganizationRequests.html">Donor & Organization Requests</a>
+    </a>
+  <div class="navbar-right">
+    <a href="#" id="notification-icon" class="icon"><img src = "notification-bell.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Notification Bell -->
+    <div id="notification-dropdown" class="dropdown-content">
+        <!-- Dropdown content --> 
+        <p>you have no notifications</p>
+    </div>
+
+      <a href="#" id="profile-icon"><img src = "no-profile-picture.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Admin Icon -->
+      <div id="profile-dropdown" class="dropdown-content">
+        <a href="adminDashboard.html">Profile</a>
+        <a href="forgotPassword.html">Change Password</a>
+        <a href="index.html">Logout</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="filter-container">
+  <p class="sort-text">Sort by:</p> <!-- Add this line -->
+  <button class="filter-button">
+    <img src="filter.png" alt="Filter" style="max-width: 40px; max-height: 40px;"> <!-- Replace with the path to your image -->
+  </button>
+  <div class="filter-dropdown">
+    <a href="organizationsSortedByArea.html">Area</a>
+    <a href="organizationsSortedByGovernate.html">Governate</a>
+    <a href="organizationsSortedByTypeMedical.html">Medical</a>
+    <a href="organizationsSortedByTypeNonProfit.html">Non-Profit</a>
+    <a href="organizationsSortedByTypeReligious.html">Religious</a>
+    <!-- Add more options as needed -->
+  </div>
+</div>
+<div class="container">
+  <h2>Organizations</h2>
+
+    
+
+<div class="profile-card">
+  <img src="no-profile-picture.png" alt="Organization 6">
+  <a href="organization6.html">Resala</a>
+  <button class="delete-button">Delete</button>
+</div>
+<div class="profile-card">
+  <img src="no-profile-picture.png" alt="Organization 7">
+  <a href="organization7.html">Al-Orman</a>
+  <button class="delete-button">Delete</button>
+
+
+  <!-- Add more profiles as needed -->
+</div>
+
+
+
+
+
+
+
+<script src="adminDashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="donor4.css">
+
+
+<title>Admin Dashboard Navbar</title>
+
+</head>
+<body>
+
+<div class="navbar">
+
+    
+    <a href="index.html">
+        <img src="logo.png" class="logo" style="max-width: 70px; max-height: 70px;">
+    </a>
+
+    <a href="adminDashboard.html">Main</a>
+    <a href="donorsList.html" >Donors</a>
+    <a href="organizationList.html" class="current">Organizations</a>
+    <a href="donorAndOrganizationRequests.html">Donor & Organization Requests</a>
+    </a>
+  <div class="navbar-right">
+    <a href="#" id="notification-icon" class="icon"><img src = "notification-bell.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Notification Bell -->
+    <div id="notification-dropdown" class="dropdown-content">
+        <!-- Dropdown content --> 
+        <p>you have no notifications</p>
+    </div>
+
+      <a href="#" id="profile-icon"><img src = "no-profile-picture.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Admin Icon -->
+      <div id="profile-dropdown" class="dropdown-content">
+        <a href="adminDashboard.html">Profile</a>
+        <a href="forgotPassword.html">Change Password</a>
+        <a href="index.html">Logout</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="profile-container">
+  <div class="profile-card">
+      <img src="no-profile-picture.png" alt="Organization Photo" class="profile-photo">
+      <h1 class="profile-name">Zeyad Al-Fadaly</h1>
+  </div>
+  <div class="profile-details">
+      <p class="profile-join-date">Join Date: 07/05/2024</p>
+      <p class="profile-certificate">
+        No Certificate Required.
+        
+      </p>
+      <p class="profile-donations">Donor type: Normal Donor </p>
+  </div>
+</div>
+
+
+
+
+
+<script src="adminDashboard.js"></script>
+
+</body>
+</html>
