@@ -109,13 +109,17 @@ body {
 }
 
 .dashboard-item {
-  background-color: #86b77f;
+  background-color: white;
   color: white;
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
   flex-basis: 45%;
   text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: #474B47;
 }
 
 .manage-button {
