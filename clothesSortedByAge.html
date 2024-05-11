@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="clothesDonations.css">
+
+
+<title>Regular Donor Dashboard</title>
+
+</head>
+<body>
+
+<div class="navbar">
+
+    
+    <a href="index.html">
+        <img src="logo.png" class="logo" style="max-width: 70px; max-height: 70px;">
+    </a>
+
+    <a href="registeredDonorDashboard.html">Donation Requests</a>
+    <a href="filterDonations.html" class="current">Filter Donations</a>
+    <a href="donorOrganizationList.html">Organizations List</a>
+    <a href="organizationCoordinatePickup.html">Schedule Pickup</a>
+    
+    
+    </a>
+  <div class="navbar-right">
+    <a href="#" id="notification-icon" class="icon"><img src = "notification-bell.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Notification Bell -->
+    <div id="notification-dropdown" class="dropdown-content">
+        <!-- Dropdown content --> 
+        <a href="organizationCoordinatePickup.html">
+        <p>you have no notifications</p>
+      </a>
+    </div>
+
+      <a href="#" id="profile-icon"><img src = "no-profile-picture.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Admin Icon -->
+      <div id="profile-dropdown" class="dropdown-content">
+        <a href="adminDashboard.html">Profile</a>
+        <a href="forgotPassword.html">Change Password</a>
+        <a href="index.html">Logout</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div clss="container2"><h2>Sort Donations By Clothes:</h2>
+
+    
+  
+   </div>
+
+   <form action="/search" method="get" class="search-form">
+    <input type="text" name="q" placeholder="Search Clothes Donations...">
+
+  </form>
+
+  <div class="filter-container">
+    <p class="sort-text">Sort by:</p> <!-- Add this line -->
+    <button class="filter-button">
+      <img src="filter.png" alt="Filter" style="max-width: 40px; max-height: 40px;">
+      <!-- Replace with the path to your image -->
+    </button>
+    <div class="filter-dropdown">
+      <a href="clothesSortedByAge.html">Age</a>
+      <a href="clothesSortedByGender.html">Gender</a>
+      <a href="clothesSortedBySeason.html">Season</a>
+      
+      <!-- Add more options as needed -->
+    </div>
+  </div>
+
+
+  <div class="container">
+    
+    
+    
+
+    <div class="profile-card">
+      
+      <a href="donationListing11.html" id="card11">Baby Clothes Needed</a>
+      
+    </div>
+
+    <div class="profile-card">
+      
+      <a href="donationListing15.html" id="card15">T-Shirts Needed For Male Teens</a>
+      
+    </div>
+
+    <div class="profile-card">
+      
+      <a href="donationListing16.html" id="card16">T-Shirts Needed For Female Teens</a>
+      
+    </div>
+
+    <div class="profile-card">
+      
+      <a href="donationListing27.html" id="card27">Winter Clothes Needed for Pre-Teen Girls</a>
+      
+    </div>
+
+
+
+
+
+<script src="registeredDonorDashboard.js"></script>
+
+</body>
+</html>
