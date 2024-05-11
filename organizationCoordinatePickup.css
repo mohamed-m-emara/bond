@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Additional CSS for Navbar Interactivity and Styling */
+
+.main-content {
+    min-height: calc(100vh - (height of navbar + height of footer));
+    /* Other styles */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    color: #86b77f;
+    align-items: center;
+    background-color: #474B47;
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+
+  #notification-dropdown { display: none; }
+
+/* Class to show the dropdown */
+.show {
+    display: block !important;
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #profile-icon {
+    margin-left: 20px; /* Adjust as needed */
+}
+
+
+
+
+.current {
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #5fa865;
+}
+
+.page-title {
+    text-align: left;
+    padding: 20px;
+    color: #474B47;
+    font-size: 32px;
+}
+
+.container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add this line */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 25%; /* Adjust as needed */
+    margin-left: 90px;
+  }
+  
+  
+  .profile-card a {
+    text-decoration: none;
+    color: #474B47;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    flex-grow: 1; /* Add this line */
+  }
+  
+  .schedule-button {
+    margin-left: 10px;
+    background-color: #4F8A5E;
+    /* Red */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .schedule-button:hover {
+    background-color: #5fa865; /* Darker red */
+  }
+  
+  a {
+    display: inline-block;
+    
+  }
+  
+  .delete-link {
+    display: inline-block;
+    margin-left: 400px;
+  }
+  
+  .delete-link1 {
+    display: inline-block;
+    margin-left: 370px;
+  }
+
+  .update-button {
+    margin-left: 10px;
+  background-color: #4F8A5E;
+  /* Red */
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.update-button:hover {
+    background-color: #5fa865;
+}  
+
+.donation-post {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.donation-post h2 {
+    color: #474B47;
+    font-size: 24px;
+}
+
+.donation-post p {
+    color: black;
+    font-size: 18px;
+}
+
+.donation-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.donation-post hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+    width: 50%;  /* Adjust this value as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    background-color: white;  /* Change this to the color you want */
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80vw;  /* 60% of the viewport width */
+    height: 80vh;  /* 40% of the viewport height */
+    overflow: auto;  /* Add a scrollbar if the content overflows */
+    border: 1px solid #ddd;  /* Add a border to make the rectangle visible */
+}
+
+h2 {
+      /* Change this to the color you want */
+    font-size: 24px;  /* Adjust as needed */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;  /* This will stack the header and the container vertically */
+}
+
+.another-header {
+  /* Add any styles you want for your headers here */
+  text-align: left;
+    padding: 20px;
+    color: #474B47;
+    font-size: 32px;
+}
+
+#note::placeholder {
+  color: rgb(204, 203, 203);  /* Change this to the color you want */
+  font-style: italic;  /* Makes the placeholder text italic */
+}
+
+#note {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;  /* Add this line */
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #4F8A5E;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 20%;  /* Add this line */
+}
+
+.form-container {
+    background-color: white;  /* Change this to the color you want */
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80vw;  /* 60% of the viewport width */
+    height: 80vh;  /* 40% of the viewport height */
+    overflow: auto;  /* Add a scrollbar if the content overflows */
+    border: 1px solid #ddd;
+    font-family: 'Montserrat', sans-serif; /* Matches the font family of .profile-card a */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-container hr {
+    margin: 20px auto; /* Center the line */
+    width: 50%; /* Adjust the width */
+    border-top: 1px solid #ddd; /* Matches the border color of .donation-post hr */
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 50%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.form-container input[type=submit] {
+    background-color: #4F8A5E;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-container input[type=submit]:hover {
+    background-color: #5fa865;
+}
+

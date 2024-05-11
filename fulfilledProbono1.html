@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fulfilledDonations.css">
+
+
+<title>Organization Dashboard Navbar</title>
+
+</head>
+<body>
+
+<div class="navbar">
+
+    
+    <a href="index.html">
+        <img src="logo.png" class="logo" style="max-width: 70px; max-height: 70px;">
+    </a>
+
+    <a href="organizationDashboard.html">Main</a>
+    <a href="donationPost.html" >Submit a Donation Post</a>
+    <a href="pendingDonations.html" >Pending Donations</a>
+    <a href="fulfilledDonations.html" class="current">Fulfilled Donations & Pro-bono offerings</a>
+    <a href="organizationCoordinatePickup.html">Coordinate Pickup</a>
+    
+    
+    </a>
+  <div class="navbar-right">
+    <a href="#" id="notification-icon" class="icon"><img src = "notification-bell.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Notification Bell -->
+    <div id="notification-dropdown" class="dropdown-content">
+        <!-- Dropdown content --> 
+        <a href="organizationCoordinatePickup.html">
+        <p>your post has been accepted, coordinate pickup</p>
+      </a>
+    </div>
+
+      <a href="#" id="profile-icon"><img src = "no-profile-picture.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Admin Icon -->
+      <div id="profile-dropdown" class="dropdown-content">
+        <a href="adminDashboard.html">Profile</a>
+        <a href="forgotPassword.html">Change Password</a>
+        <a href="organizationUpdateInformation.html">Update Information</a>
+        <a href="index.html">Logout</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="content">
+    <div class="donation-post">
+        <h2>Donor Name:</h2>
+        <p>Mohamed Mohsen</p>
+        <hr>
+        <h2>Donor Pro-bono Offering:</h2>
+        <p>Medical</p>
+        <hr>
+        <h2>His Journey With Us:</h2>
+        <p>He offered to give free checkups to all of the children in our care.</p>
+        <hr>
+        <h2>Write a Thank You Note:</h2>  <!-- Add this line -->
+        <form class="note-form">
+          <textarea id="note" name="note" rows="4" cols="50" placeholder="Write your message here..."></textarea>
+          <button type="submit" class="submit-button">Submit</button>
+      </form> 
+        
+    </div>
+</div>
+    
+
+
+<script src="organizationDashBoard.js"></script>
+
+</body>
+</html>
