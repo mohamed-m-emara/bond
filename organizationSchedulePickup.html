@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="organizationCoordinatePickup.css">
+
+
+<title>Organization Dashboard Navbar</title>
+
+</head>
+<body>
+
+<div class="navbar">
+
+    
+    <a href="index.html">
+        <img src="logo.png" class="logo" style="max-width: 70px; max-height: 70px;">
+    </a>
+
+    <a href="organizationDashboard.html">Main</a>
+    <a href="donationPost.html">Submit a Donation Post</a>
+    <a href="pendingDonations.html">Pending Donations</a>
+    <a href="fulfilledDonations.html">Fulfilled Donations & Pro-bono offerings</a>
+    <a href="organizationCoordinatePickup.html" class="current">Coordinate Pickup</a>
+    
+    
+    </a>
+  <div class="navbar-right">
+    <a href="#" id="notification-icon" class="icon"><img src = "notification-bell.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Notification Bell -->
+    <div id="notification-dropdown" class="dropdown-content">
+        <!-- Dropdown content --> 
+        <a href="organizationCoordinatePickup.html">
+        <p>your post has been accepted, coordinate pickup</p>
+      </a>
+    </div>
+
+      <a href="#" id="profile-icon"><img src = "no-profile-picture.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Admin Icon -->
+      <div id="profile-dropdown" class="dropdown-content">
+        <a href="adminDashboard.html">Profile</a>
+        <a href="forgotPassword.html">Change Password</a>
+        <a href="index.html">Logout</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+<body>
+    <h1>Schedule Pickup</h1>
+    <div class="form-container">
+        <form>
+            <label for="name">Name of the person going to pick up:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <hr>
+            <label for="time">Schedule time:</label><br>
+            <select id="time" name="time">
+                <option value="">Select...</option>
+                <!-- You can add more options as needed -->
+                <option value="8">8 AM</option>
+                <option value="9">9 AM</option>
+                <option value="9">10 AM</option>
+                <option value="9">11 AM</option>
+                <option value="9">12 AM</option>
+                <option value="9">1 PM</option>
+                <option value="9">2 PM</option>
+                <option value="9">3 PM</option>
+                <option value="9">4 PM</option>
+                <option value="9">5 PM</option>
+                <option value="9">6 PM</option>
+                <option value="9">7 PM</option>
+                <option value="9">8 PM</option>
+                <option value="9">9 PM</option>
+                <option value="9">10 PM</option>
+                <!-- ... -->
+                <option value="23">11 PM</option>
+            </select><br>
+            <hr>
+            <!-- Replace the src attribute with your Google Maps link -->
+            <label for="location">Location of the donated items:</label><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27642.521745344846!2d31.332761599999998!3d29.999104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1715372914893!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
+
+<script src="organizationCoordinatePickup.js"></script>
+
+</body>
+</html>
