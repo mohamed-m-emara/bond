@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="donationListing.css">
+<link rel="stylesheet" type="text/css" href="fulfilledDonations.css">
 
 
 <title>Organization Dashboard Navbar</title>
@@ -12,17 +12,16 @@
 </head>
 <body>
 
-<div class="navbar">
+  <div class="navbar">
 
     
     <a href="index.html">
         <img src="logo.png" class="logo" style="max-width: 70px; max-height: 70px;">
     </a>
 
-    <a href="organizationDashboard.html"class="current">Donation Requests</a>
-    <a href="donationPost.html">Submit a Donation Post</a>
-    <a href="pendingDonations.html">Pending Donations</a>
-    <a href="fulfilledDonations.html">Fulfilled Donations & Pro-bono offerings</a>
+    <a href="registeredDonorDashboard.html"class="current">Donation Requests</a>
+    <a href="filterDonations.html">Filter Donations</a>
+    <a href="donorOrganizationList.html">Organizations List</a>
     <a href="organizationCoordinatePickup.html">Schedule Pickup</a>
     
     
@@ -32,7 +31,7 @@
     <div id="notification-dropdown" class="dropdown-content">
         <!-- Dropdown content --> 
         <a href="organizationCoordinatePickup.html">
-        <p>your post has been accepted, coordinate pickup</p>
+        <p>you have no notifications</p>
       </a>
     </div>
 
@@ -40,7 +39,6 @@
       <div id="profile-dropdown" class="dropdown-content">
         <a href="adminDashboard.html">Profile</a>
         <a href="forgotPassword.html">Change Password</a>
-        <a href="organizationUpdateInformation.html">Update Information</a>
         <a href="index.html">Logout</a>
     </div>
     </div>
@@ -51,7 +49,7 @@
 <div class="content">
     <div class="donation-post">
         <h2>Donation Title:</h2>
-        <p>Toys Needed</p>
+        <p>Toys Needed Urgently</p>
         <hr>
         <h2>Donation Type:</h2>
         <p>Toys</p>
@@ -59,7 +57,9 @@
         <h2>Description:</h2>
         <p>We have a lot of infants in our care, and we need to keep them busy sometimes, lol :). </p>
         <hr>
-        <p>Posted by: Resala Organization </p>
+        <h2>Organization:</h2>
+        <p>Resala Organization</p>
+        <hr>
         <img src="toys.jpg" alt="Donation Image">
     </div>
 </div>
