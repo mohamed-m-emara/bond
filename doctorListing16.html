@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fulfilledDonations.css">
+
+
+<title>Organization Dashboard Navbar</title>
+
+</head>
+<body>
+
+  <div class="navbar">
+
+    
+    <a href="index.html">
+        <img src="logo.png" class="logo" style="max-width: 70px; max-height: 70px;">
+    </a>
+
+    <a href="registeredDonorDashboard.html"class="current">Donation Requests</a>
+    <a href="filterDonations.html">Filter Donations</a>
+    <a href="donorOrganizationList.html">Organizations List</a>
+    <a href="donorFulfillDonations.html">Fulfill Donations</a>
+    <a href="doctorProbonoOfferings.html">Probono Offerings</a>
+    <a href="organizationCoordinatePickup.html">Schedule Pickup</a>
+    
+    
+    </a>
+  <div class="navbar-right">
+    <a href="#" id="notification-icon" class="icon"><img src = "notification-bell.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Notification Bell -->
+    <div id="notification-dropdown" class="dropdown-content">
+        <!-- Dropdown content --> 
+        <a href="organizationCoordinatePickup.html">
+        <p>you have no notifications</p>
+      </a>
+    </div>
+
+      <a href="#" id="profile-icon"><img src = "no-profile-picture.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Admin Icon -->
+      <div id="profile-dropdown" class="dropdown-content">
+        <a href="adminDashboard.html">Profile</a>
+        <a href="forgotPassword.html">Change Password</a>
+        <a href="index.html">Logout</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="content">
+    <div class="donation-post">
+        <h2>Donation Title:</h2>
+        <p>T-Shirts Needed For Female Teens</p>
+        <hr>
+        <h2>Donation Type:</h2>
+        <p>Clothes</p>
+        <hr>
+        <h2>Description:</h2>
+        <p>During summer , a teen loves a good quality T-shirt.</p>
+        <hr>
+        <h2>Organization:</h2>
+        <p>Zeyada Al-Khair Organization</p>
+        <hr>
+        <img src="t-shirt.jpeg" alt="Donation Image">
+    </div>
+</div>
+    
+
+
+<script src="organizationDashBoard.js"></script>
+
+</body>
+</html>
