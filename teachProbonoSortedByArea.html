@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="registeredDonorDashboard.css">
+
+
+<title>Regular Donor Dashboard</title>
+
+</head>
+<body>
+
+<div class="navbar">
+
+    
+    <a href="index.html">
+        <img src="logo.png" class="logo" style="max-width: 70px; max-height: 70px;">
+    </a>
+
+    <a href="registeredDonorDashboard.html">Donation Requests</a>
+    <a href="filterDonations.html">Filter Donations</a>
+    <a href="donorOrganizationList.html">Organizations List</a>
+    <a href="donorFulfillDonations.html">Fulfill Donations</a>
+    <a href="donorCoordinatePickup.html">Schedule Pickup</a>
+    <a href="teacherProbonoOfferings.html"class="current">Probono Offerings</a>
+    
+    
+    </a>
+    <div class="navbar-right">
+      <a href="#" id="notification-icon" class="icon"><img src = "notification-bell.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Notification Bell -->
+      <div id="notification-dropdown" class="dropdown-content">
+          <!-- Dropdown content --> 
+          <a href="donorCoordinatePickup.html">
+          <p>your order is ready for pickup, please pick a date and location.</p>
+        </a>
+      </div>
+
+      <a href="#" id="profile-icon"><img src = "no-profile-picture.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Admin Icon -->
+      <div id="profile-dropdown" class="dropdown-content">
+        <a href="adminDashboard.html">Profile</a>
+        <a href="forgotPassword.html">Change Password</a>
+        <a href="index.html">Logout</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+<form action="/search" method="get" class="search-form">
+    <input type="text" name="q" placeholder="Search Teaching Oppurtunities...">
+
+  </form>
+
+  <div class="filter-container">
+    <p class="sort-text">Sort by:</p> <!-- Add this line -->
+    <button class="filter-button">
+      <img src="filter.png" alt="Filter" style="max-width: 40px; max-height: 40px;">
+      <!-- Replace with the path to your image -->
+    </button>
+    <div class="filter-dropdown">
+      <a href="teachProbonoSortedByGovernate.html">Governate</a>
+      <a href="teachProbonoSortedByArea.html">Area</a>
+      <a href="teachProbonoSortedBySubject.html">Subject</a>
+    </div>
+    </div>
+
+  <div><h2>All Available Probono teaching Oppurtunities:</h2></div>
+
+
+  <div class="container">
+    
+
+    
+
+    <div class="profile-card">
+      
+      <a href="teachProbonoListing2.html" id="card15">Math Tutoring Required</a>
+      <button  class="fulfill-button">Fulfill</button>
+      
+    </div>
+
+    <div class="profile-card">
+      
+        <a href="teachProbonoListing6.html" id="card27">English Teacher Required in Giza</a>
+        <button  class="fulfill-button">Fulfill</button>
+      </div>
+
+    <div class="profile-card">
+      
+      <a href="teachProbonoListing3.html" id="card16">Algebra Tutoring Required in Giza</a>
+      <button  class="fulfill-button">Fulfill</button>
+    </div>
+
+    <div class="profile-card">
+      
+      <a href="teachProbonoListing4.html" id="card27">Physical Education Teacher Needed</a>
+      <button  class="fulfill-button">Fulfill</button>
+    </div>
+
+    <div class="profile-card">
+      
+        <a href="teachProbonoListing1.html" id="card11">English Teachers Needed in Cairo</a>
+        <button  class="fulfill-button">Fulfill</button>
+        
+      </div>
+
+    <div class="profile-card">
+      
+        <a href="teachProbonoListing5.html" id="card27">Social Studies Teacher Needed in Alexandria</a>
+        <button  class="fulfill-button">Fulfill</button>
+      </div>
+
+      
+
+    
+
+
+
+    
+    
+
+    
+
+
+
+
+
+
+
+
+<script src="teacherDashboard.js"></script>
+
+</body>
+</html>
