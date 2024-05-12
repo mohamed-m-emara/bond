@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="clothesDonations.css">
+<link rel="stylesheet" type="text/css" href="registeredDonorDashboard.css">
 
 
 <title>Regular Donor Dashboard</title>
@@ -20,10 +20,11 @@
     </a>
 
     <a href="registeredDonorDashboard.html">Donation Requests</a>
-    <a href="filterDonations.html" class="current">Filter Donations</a>
+    <a href="filterDonations.html">Filter Donations</a>
     <a href="donorOrganizationList.html">Organizations List</a>
     <a href="donorFulfillDonations.html">Fulfill Donations</a>
     <a href="donorCoordinatePickup.html">Schedule Pickup</a>
+    <a href="teacherProbonoOfferings.html"class="current">Probono Offerings</a>
     
     
     </a>
@@ -46,16 +47,8 @@
   </div>
 </div>
 
-
-
-  <div clss="container2"><h2>Sort Donations By Clothes:</h2>
-
-    
-  
-   </div>
-
-   <form action="/search" method="get" class="search-form">
-    <input type="text" name="q" placeholder="Search School Supply Donations...">
+<form action="/search" method="get" class="search-form">
+    <input type="text" name="q" placeholder="Search Teaching Oppurtunities...">
 
   </form>
 
@@ -66,56 +59,73 @@
       <!-- Replace with the path to your image -->
     </button>
     <div class="filter-dropdown">
-      <a href="schoolSuppliesSortedByBooks.html">Books</a>
-      <a href="schoolSuppliesSortedByStationary.html">Stationary</a>
-      
-      
-      <!-- Add more options as needed -->
+      <a href="teachProbonoSortedByGovernate.html">Governate</a>
+      <a href="teachProbonoSortedByArea.html">Area</a>
+      <a href="teachProbonoSortedBySubject.html">Subject</a>
     </div>
-  </div>
+    </div>
+
+  <div><h2>All Available Probono teaching Oppurtunities:</h2></div>
 
 
   <div class="container">
+    
 
     <div class="profile-card">
       
-      <a href="donationListing7.html" id="card7">Books Needed For a Library</a>
-      <button onclick="location.href='donorFulfillDonations.html'" class="fulfill-button">Fulfill</button>
-    </div>
-    <div class="profile-card">
+      <a href="teachProbonoListing1.html" id="card11">English Teachers Needed in Cairo</a>
+      <button  class="fulfill-button">Fulfill</button>
       
-      <a href="donationListing8.html" id="card8">School Supplies Needed</a>
-      <button onclick="location.href='donorFulfillDonations.html'" class="fulfill-button">Fulfill</button>
-    </div>
-    <div class="profile-card">
-      
-      <a href="donationListing9.html" id="card9">Shortage In Erasers</a>
-      <button onclick="location.href='donorFulfillDonations.html'" class="fulfill-button">Fulfill</button>
     </div>
 
     <div class="profile-card">
       
-      <a href="donationListing14.html" id="card14">Fiction Books Needed</a>
-      <button onclick="location.href='donorFulfillDonations.html'" class="fulfill-button">Fulfill</button>
+      <a href="teachProbonoListing2.html" id="card15">Math Tutoring Required</a>
+      <button  class="fulfill-button">Fulfill</button>
+      
     </div>
 
     <div class="profile-card">
       
-      <a href="donationListing29.html" id="card29">comic Books Needed</a>
-      <button onclick="location.href='donorFulfillDonations.html'" class="fulfill-button">Fulfill</button>
+      <a href="teachProbonoListing3.html" id="card16">Algebra Tutoring Required in Giza</a>
+      <button  class="fulfill-button">Fulfill</button>
     </div>
+
+    <div class="profile-card">
+      
+      <a href="teachProbonoListing4.html" id="card27">Physical Education Teacher Needed</a>
+      <button  class="fulfill-button">Fulfill</button>
+    </div>
+
+    <div class="profile-card">
+      
+        <a href="teachProbonoListing5.html" id="card27">Social Studies Teacher Needed in Alexandria</a>
+        <button  class="fulfill-button">Fulfill</button>
+      </div>
+
+      <div class="profile-card">
+      
+        <a href="teachProbonoListing6.html" id="card27">English Teacher Required in Giza</a>
+        <button  class="fulfill-button">Fulfill</button>
+      </div>
+
     
 
 
 
     
-    </div>
+    
+
+    
 
 
 
 
 
-<script src="registeredDonorDashboard.js"></script>
+
+
+
+<script src="teacherDashboard.js"></script>
 
 </body>
 </html>

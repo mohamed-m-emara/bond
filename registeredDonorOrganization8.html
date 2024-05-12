@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="registeredDonorOrganization.css">
+
+
+<title>Admin Dashboard Navbar</title>
+
+</head>
+<body>
+
+    <div class="navbar">
+
+    
+        <a href="index.html">
+            <img src="logo.png" class="logo" style="max-width: 70px; max-height: 70px;">
+        </a>
+    
+        <a href="registeredDonorDashboard.html">Donation Requests</a>
+        <a href="filterDonations.html">Filter Donations</a>
+        <a href="donorOrganizationList.html"class="current">Organizations List</a>
+        <a href="donorFulfillDonations.html">Fulfill Donations</a>
+        <a href="donorCoordinatePickup.html">Schedule Pickup</a>        
+        
+        </a>
+        <div class="navbar-right">
+          <a href="#" id="notification-icon" class="icon"><img src = "notification-bell.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Notification Bell -->
+          <div id="notification-dropdown" class="dropdown-content">
+              <!-- Dropdown content --> 
+              <a href="donorCoordinatePickup.html">
+              <p>your order is ready for pickup, please pick a date and location.</p>
+            </a>
+          </div>
+    
+          <a href="#" id="profile-icon"><img src = "no-profile-picture.png" style="max-width: 40px; max-height: 40px;"></a> <!-- Admin Icon -->
+          <div id="profile-dropdown" class="dropdown-content">
+            <a href="adminDashboard.html">Profile</a>
+            <a href="forgotPassword.html">Change Password</a>
+            <a href="index.html">Logout</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-container">
+        <div class="profile-card">
+            <img src="no-profile-picture.png" alt="Organization Photo" class="profile-photo">
+            <h1 class="profile-name">Bahya</h1>
+        </div>
+        <div class="profile-details">
+            <p class="profile-join-date">Join Date: 07/05/2024</p>
+            <p class="profile-certificate">
+              Uploaded Certificate: 
+              <a href="organization_cert.pdf" class="download-button" download>Download</a>
+            </p>
+            <p class="profile-donations">Organization type: Medical </p>
+            <p class="profile-phone">Phone Number: +20 11 24 550 422</p> <!-- Add this line -->
+          <p class="profile-email">Email Address: gogogaga@gmail.com</p> <!-- Add this line -->
+          <p class="profile-address">Address: 420 High Street, Hustler City, Alabama</p> <!-- Add this line -->
+          <p class="profile-map">
+            Google Maps: 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27642.773634414138!2d31.3420002!3d29.99819965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1715109582928!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </p>
+        </div>
+      </div>
+
+
+
+
+<script src="adminDashboard.js"></script>
+
+</body>
+</html>
